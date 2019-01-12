@@ -8,47 +8,62 @@ page {
     font-size:180px;
     position: absolute;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 30%;
  }
 #c{
     background-color: lightgreen;
-    animation:c 10s infinite;
+    animation:c 9.4s infinite;
 }
 #x{
     background-color: red;
-    animation:x 10s infinite;
+    animation:x 9.4s infinite;
 }
 #q{
-    background-color: black;
-    color: white;
-    animation:q 10s infinite;
+    background-color: yellow;
+    animation:q 9.4s infinite;
+    background-image: url('../images/sunset.jpg');
+    background-size: 100% 100%;
 }
 #d{
     background-color: lightgreen;
-    animation:d 10s infinite;
+    color:white;
+    animation:d 9.4s infinite;
+}
+#z{
+    font-size: 36px;
+    display: block;
+    animation: z 9.4s infinite;
+}
+@keyframes z {
+    0%{opacity: 0}
+    70%{opacity: 0}
+    80%{opacity: 100}
+    90%{opacity: 0}
+    100%{opacity:0}
 }
 @keyframes c {
-    0%{opacity: 0;}
-    20%{opacity: 100;}
-    40%{opacity: 0;}
-    100%{opacity:0;}
+    0%{opacity: 0}
+    20%{opacity: 100}
+    40%{opacity: 0}
+    100%{opacity:0}
 }
 @keyframes x {
-    0%{opacity: 0;}
-    20%{opacity: 0;}
-    40%{opacity: 100;}
-    60%{opacity: 0;}
-    100%{opacity:0;}
+    0%{opacity: 0}
+    20%{opacity: 0}
+    40%{opacity: 100}
+    60%{opacity: 0}
+    100%{opacity:0}
 }
 @keyframes q {
-    0%{opacity: 0;}
-    80%{opacity: 100;}
-    60%{opacity: 00;}
-    100%{opacity:0;}
+    0%{opacity: 0}
+    40%{opacity: 0}
+    60%{opacity: 100}
+    80%{opacity: 0}
+    100%{opacity:0}
 }
 @keyframes d {
-    0%{opacity: 0;}
-    60%{opacity: 0;}
-    80%{opacity: 00;}
-    100%{opacity:100;}
+    0%{opacity: 0}
+    60%{opacity: 0}
+    80%{opacity: 100}
+    100%{opacity:0}
 }
