@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        function isInteger(num) {
+            if (!isNaN(num) && num % 1 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var price=10,count,totalprice;
+        count=prompt("how many cups?")
+        if(isNaN(count)){
+            document.write("not a number");
+        }
+        else{
+            if (isInteger(count)){
+                if(count%2==0){
+                    totalprice=count/2*15;
+                }
+                if(count%2==1){
+                    totalprice=count*7.5+2.5;
+                }
+                document.write(totalprice);
+            }
+            else {
+                document.write("not integer");
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

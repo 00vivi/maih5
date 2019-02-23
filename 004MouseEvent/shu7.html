@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height:100%;
+            text-align: center;
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body onclick="gogogo()">
+
+</body>
+<script>
+    var num=103;
+    function gogogo(){
+        if(num%7==0){
+            document.body.innerHTML =num+"pass";
+        }
+        else if(num%7==0){
+            document.body.innerHTML =num+"pass";
+        }
+        else if((Math.floor(num/10))%10==7){
+            document.body.innerHTML ="pass";
+        }
+        else{
+        document.body.innerHTML =num;
+        }
+        num++;
+    }
+</script>
+</html>

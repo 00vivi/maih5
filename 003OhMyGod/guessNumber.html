@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo"></div>
+</body>
+</html>
+<script>
+    let a = Math.random();
+    a =Math.ceil(a*6);
+    console.info(a);
+    // document.write(a);
+    // while (guess != a) {
+    //     if (guess > a) {
+    //         document.write("smaller");
+    //         document.write("<\br>");
+    //         guess= prompt("guess");
+    //     } else {
+    //         document.write("bigger");
+    //         guess= prompt("guess");
+    //     }
+    // }
+    // document.write("right");
+    var bingo = false;
+    function gue() {
+        if (bingo){
+            return;
+        }
+        var guess = prompt("guess?");
+        if(!Number.isInteger(guess/1)||guess>6||guess<1){
+            document.getElementById("demo").innerHTML = "wrong input";
+            return;
+        }
+        console.info("random===="+a);
+        console.info("guess===="+guess);
+        var diff=Math.abs(a-guess);
+        console.info(diff);
+        var str;
+        if (guess==a){
+            // document.write("right");
+            str = "right"+"<img src=\"images/"+a+".png\"/>";
+            bingo = true;
+        }
+        else if(guess>a){
+            if (diff>1){
+                str = "too larrge";
+            } 
+            else {
+                str = "little larrge";
+            }
+        }
+        else{
+            if (diff>1){
+                str = "too small";
+            }
+            else {
+                str = "little small";
+            }
+        }
+            document.getElementById("demo").innerHTML= str ;
+    }
+    gue();
+    gue();
+    gue();
+</script>
