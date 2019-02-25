@@ -10,9 +10,9 @@
             position: absolute;
         }
         #container{
+            background-image: url('images/dressup/body.png');
             width:350px;
             height:350px;
-            background-image: url('images/dressup/body.png');
             position: absolute;
             top:60px;
         }
@@ -30,7 +30,7 @@
     <div id="haihun" onclick="haihun()">海魂衫</div>
     <div id="diaodai" onclick="diaodai()">吊带</div>
     <div id="xiku" onclick="xiku()">西裤</div>
-    <div id="duaku" onclick="duanku()">短裤</div>
+    <div id="duanku" onclick="duanku()">短裤</div>
 </div>
 <div id="container">
     <div id="upper"></div>
@@ -48,10 +48,10 @@
         document.getElementById("upper").style.backgroundImage= "url('images/dressup/upper3.png')"
     }
     function xiku(){
-        document.getElementById("upper").style.backgroundImage= "url('images/dressup/lower1.png')"
+        document.getElementById("lower").style.backgroundImage= "url('images/dressup/lower1.png')"
     }
     function duanku(){
-        document.getElementById("upper").style.backgroundImage= "url('images/dressup/lower2.png')"
+        document.getElementById("lower").style.backgroundImage= "url('images/dressup/lower2.png')"
     }
 </script>
 </html>
