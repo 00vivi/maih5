@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #upper{
+            width:350px;
+            height:350px;
+            background-image: url('images/dressup/upper3.png');
+        }
+        div{
+
+            border:1px solid black;
+        }
+        #container{
+            width:350px;
+            height:350px;
+            background-image: url('images/dressup/body.png');
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <div id="suit" onclick="suit()">西装</div>
+    <div id="haihun" onclick="haihun()">海魂衫</div>
+</div>
+<div id="container">
+    <div id="upper"></div>
+</div>
+</body>
+<script>
+    function suit() {
+        document.getElementById("upper").style.backgroundImage= "url('images/dressup/upper1.png')"
+    }
+    function haihun() {
+        document.getElementById("upper").style.backgroundImage= "url('images/dressup/upper2.png')"
+    }
+</script>
+</html>
