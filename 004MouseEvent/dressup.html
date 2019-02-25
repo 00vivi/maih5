@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #upper{
+        #container div{
             width:350px;
             height:350px;
-            background-image: url('images/dressup/upper3.png');
-        }
-        div{
-
-            border:1px solid black;
+            position: absolute;
         }
         #container{
             width:350px;
             height:350px;
             background-image: url('images/dressup/body.png');
+            position: absolute;
+            top:60px;
+        }
+        #menu div{
+            float:left;
+            border:1px solid black;
+            width:50px;
+            text-align: center;
         }
     </style>
 </head>
@@ -24,9 +28,13 @@
 <div id="menu">
     <div id="suit" onclick="suit()">西装</div>
     <div id="haihun" onclick="haihun()">海魂衫</div>
+    <div id="diaodai" onclick="diaodai()">吊带</div>
+    <div id="xiku" onclick="xiku()">西裤</div>
+    <div id="duaku" onclick="duanku()">短裤</div>
 </div>
 <div id="container">
     <div id="upper"></div>
+    <div id="lower"></div>
 </div>
 </body>
 <script>
@@ -35,6 +43,15 @@
     }
     function haihun() {
         document.getElementById("upper").style.backgroundImage= "url('images/dressup/upper2.png')"
+    }
+    function diaodai(){
+        document.getElementById("upper").style.backgroundImage= "url('images/dressup/upper3.png')"
+    }
+    function xiku(){
+        document.getElementById("upper").style.backgroundImage= "url('images/dressup/lower1.png')"
+    }
+    function duanku(){
+        document.getElementById("upper").style.backgroundImage= "url('images/dressup/lower2.png')"
     }
 </script>
 </html>
