@@ -48,7 +48,7 @@ function judge(myChoice, computerResult) {
             document.getElementById("result").innerHTML = "you win";
         }
         else{
-            document.getElementById("result").innerHTML = "drae";
+            document.getElementById("result").innerHTML = "draw";
         }
     }
 }
